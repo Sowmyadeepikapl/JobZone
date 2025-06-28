@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+# 💼 JobZone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+***Bold-italicA smart job matcher built using React frontend and AWS serverless backend.***
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Overview
 
-### `npm start`
+JobZone allows users to input their skills and preferred location, or upload a resume. It fetches relevant job listings using the JSearch API and displays them in a clean UI with light/dark mode support. It also stores user entries in DynamoDB for future tracking and insights.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🌐 Live Stack Overview
 
-### `npm test`
+* **Frontend**: React.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * Neon-styled dark mode toggle
+  * Form to input name, email, keywords, location
+  * Job card layout
+  * Responsive and animated UI
 
-### `npm run build`
+* **Backend**: AWS Lambda + API Gateway
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  * REST API triggered by POST request
+  * Parses user input and fetches jobs from JSearch API
+  * Stores data into DynamoDB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* **Infrastructure**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  * AWS Lambda (Python)
+  * Amazon API Gateway
+  * AWS DynamoDB
+  * IAM Role for Lambda access
+  * CORS enabled correctly
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🖼️ Project Architecture (Docs)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```text
+          +--------------------+
+          |   React Frontend  |
+          | (JobZone.jsx)     |
+          +--------+----------+
+                   |
+                   | HTTP POST (user input)
+                   v
+          +--------+----------+
+          |   API Gateway     |
+          |   (CORS enabled)  |
+          +--------+----------+
+                   |
+                   | Lambda Invocation
+                   v
+          +--------+----------+
+          |   AWS Lambda       |
+          | (lambda_function.py)
+          +--------+----------+
+                   |
+        +----------+-----------+
+        |                      |
+        v                      v
+ JSearch API         DynamoDB (Jobsearches)
+ (Job Listings)      (User & job match data)
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Lambda Function Highlights
 
-## Learn More
+* Handles CORS preflight and POST requests
+* Parses body: name, email, keywords, location
+* Calls **JSearch API** with formatted query
+* Stores matched jobs with user info into **DynamoDB**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌈 Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* 🎯 Instant job matching via API
+* 🌙 Dark/Light mode toggle (with neon glow)
+* 🧠 Resume parsing (coming soon)
+* ☁️ AWS-native integration with serverless infra
+* 🔒 Secure with environment variables and CORS
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Setup & Run Locally
 
-### Analyzing the Bundle Size
+```bash
+git clone https://github.com/yourusername/JobZone.git
+cd JobZone
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Set up your environment variables in AWS Lambda:
 
-### Making a Progressive Web App
+```env
+JSEARCH_API_KEY=<your_rapidapi_key>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📸 Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> ✅ Add screenshots of:
+>
+> * Landing form
 
-### Deployment
+> * Job listing results
+> * Dark mode UI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🙌 Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [RapidAPI JSearch](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch/)
+* [AWS Free Tier](https://aws.amazon.com/free/)
+* ReactJS & Vite
+
+---
+
+## 📄 License
+
+MIT License. Open to use & contributions.
+
+---
+
+## 👥 Team Members
+
+* 🧠 Sowmya (Frontend, AWS Setup)
+
+
+---
+
+## 📁 Additional Docs To Add
+
+*All markdown files are available in /docs/:
+
+lambda-setup.md – How Lambda was configured
+
+architecture.md – Visual + textual overview
+
+api-gateway-config.md – How routing & stages were set
+
+dynamodb-structure.md – Table schema and examples
