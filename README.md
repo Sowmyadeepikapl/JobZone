@@ -98,14 +98,13 @@ JobZone allows users to input their skills and preferred location, or upload a r
 * [AWS Free Tier](https://aws.amazon.com/free/)
 * ReactJS & Vite
 ---
-📁 Additional Docs To Add
+📄 Additional Documentation
+All markdown files are located in /docs/ folder and help onboard contributors quickly:
 
-All markdown files are available in /docs/:
+[lambda-setup.md](lambda-setup.md)– How AWS Lambda was configured (runtime, env vars, IAM permissions)
 
-lambda-setup.md – How Lambda was configured
+[architecture.md](architecture.md)– System architecture diagram + overview
 
-architecture.md – Visual + textual overview
+[api-gateway-config.md](api-gateway-config.md)– Route setup, integration, and CORS settings in API Gateway
 
-api-gateway-config.md – How routing & stages were set
-
-dynamodb-structure.md – Table schema and examples
+[dynamodb-structure.md](dynamodb-structure.md)– Table name, primary keys, and example data structure
