@@ -84,11 +84,11 @@ JobZone allows users to input their skills and preferred location, or upload a r
 ---
 ## 📸 Screenshots
 > * Landing form
- ### 🌝 Light Mode
+ ### 🌕 Light Mode
 ![LightMode](./screenshots/Light-mode.png)
 > * ### ✅ Job Results
 ![Job Results](./screenshots/Result.png)
-> * ### 🌚 Dark Mode
+> * ### 🌑 Dark Mode
  ![Dark Mode](./screenshots/Darkmode.png) 
 ---
 
