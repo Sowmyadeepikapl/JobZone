@@ -96,7 +96,6 @@ JobZone allows users to input their skills and preferred location, or upload a r
 
 * [RapidAPI JSearch](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch/)
 * [AWS Free Tier](https://aws.amazon.com/free/)
-* ReactJS & Vite
 ---
 📄 Additional Documentation
 All markdown files are located in /docs/ folder and help onboard contributors quickly:
