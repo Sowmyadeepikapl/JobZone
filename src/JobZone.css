@@ -1,0 +1,145 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@400;600;700&family=Dancing+Script&display=swap');
+
+/* Light Theme (Pastel + Calm) */
+.light-mode {
+  background: linear-gradient(to bottom right, #fdf6f0, #e6f4f1, #f0f4fd);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Truculenta', sans-serif;
+}
+
+.title-glow {
+  color: #5c4d7d;
+  text-shadow: 1px 1px 2px #d2c2f0;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.tagline {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #6c6c6c;
+  font-weight: 600;
+}
+
+.form-container,
+.job-card {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-family: 'Truculenta', sans-serif;
+}
+
+button {
+  background-color: #b49ddb;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  margin-top: 0.5rem;
+  font-family: 'Truculenta', sans-serif;
+}
+
+button:hover {
+  background-color: #9a84cc;
+}
+
+.desc {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  opacity: 0.85;
+  text-align: center;
+}
+
+.job-card h4 {
+  margin-bottom: 0.25rem;
+  color: #4b3d60;
+}
+
+.job-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+/* Dark Mode (Neon Vibe) */
+.dark-mode {
+  background-color: #111;
+  color: #FF6E00;
+  font-family: 'Truculenta', sans-serif;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.dark-mode .title-glow {
+  color: #FF6E00;
+  text-shadow: 0 0 8px #FF6E00, 0 0 12px #FF6E00;
+}
+
+.dark-mode .form-container,
+.dark-mode .job-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #FF6E00;
+  box-shadow: 0 0 10px rgba(255, 110, 0, 0.3);
+}
+
+.dark-mode input {
+  background-color: transparent;
+  color: #FF6E00;
+  border: 1px solid #FF6E00;
+}
+
+.dark-mode button {
+  background-color: #FF6E00;
+  color: #000;
+}
+
+/* Toggle Button */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  background: transparent;
+  border: 2px solid currentColor;
+  border-radius: 50px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  z-index: 999;
+  font-family: 'Truculenta', sans-serif;
+}
+
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Truculenta', sans-serif;
+}
