@@ -98,10 +98,9 @@ JobZone allows users to input their skills and preferred location, or upload a r
 * [AWS Free Tier](https://aws.amazon.com/free/)
 * ReactJS & Vite
 ---
+📁 Additional Docs To Add
 
-## 📁 Additional Docs To Add
-
-*All markdown files are available in /docs/:
+All markdown files are available in /docs/:
 
 lambda-setup.md – How Lambda was configured
 
