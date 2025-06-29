@@ -127,3 +127,5 @@ Email Lambda ➝ Sends job matches to user email
 [api-gateway-config.md](api-gateway-config.md)– Route setup, integration, and CORS settings in API Gateway
 
 [dynamodb-structure.md](dynamodb-structure.md)– Table name, primary keys, and example data structure
+
+[email-lambda.md](email-lamda.md) -  How the email-sending Lambda works: input format, environment variables, and testing flow
