@@ -1,6 +1,6 @@
 # 💼 JobZone
 
-***Bold-italicA smart job matcher built using React frontend and AWS serverless backend.***
+**A smart job matcher built using React frontend and AWS serverless backend.**
 
 ---
 
@@ -83,23 +83,21 @@ JobZone allows users to input their skills and preferred location, or upload a r
 
 ---
 ## 📸 Screenshots
-
-> ✅ Add screenshots of:
->
 > * Landing form
-
-> * Job listing results
-> * Dark mode UI
-
+ ### 🌕 Light Mode
+![LightMode](./screenshots/Light-mode.png)
+> * ### ✅ Job Results
+![Job Results](./screenshots/Result.png)
+> * ### 🌑 Dark Mode
+ ![Dark Mode](./screenshots/Darkmode.png) 
 ---
 
 ## 🙌 Acknowledgements
 
 * [RapidAPI JSearch](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch/)
 * [AWS Free Tier](https://aws.amazon.com/free/)
-* ReactJS & Vite
-
 ---
+<<<<<<< HEAD
 ## 📁 Additional Docs To Add
 
 *All markdown files are available in /docs/:
@@ -111,3 +109,15 @@ architecture.md – Visual + textual overview
 api-gateway-config.md – How routing & stages were set
 
 dynamodb-structure.md – Table schema and examples
+=======
+📄 Additional Documentation
+All markdown files are located in /docs/ folder and help onboard contributors quickly:
+
+[lambda-setup.md](lambda-setup.md)– How AWS Lambda was configured (runtime, env vars, IAM permissions)
+
+[architecture.md](architecture.md)– System architecture diagram + overview
+
+[api-gateway-config.md](api-gateway-config.md)– Route setup, integration, and CORS settings in API Gateway
+
+[dynamodb-structure.md](dynamodb-structure.md)– Table name, primary keys, and example data structure
+>>>>>>> e315280097f3d0741fa53b1b88cb2fc939be4236
