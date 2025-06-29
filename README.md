@@ -6,7 +6,7 @@
 
 ## 🚀 Overview
 
-JobZone allows users to input their skills and preferred location, or upload a resume. It fetches relevant job listings using the JSearch API and displays them in a clean UI with light/dark mode support. It also stores user entries in DynamoDB for future tracking and insights.
+JobZone allows users to input their skills and preferred location. It fetches relevant job listings using the JSearch API and displays them in a clean UI with light/dark mode support. It also stores user entries in DynamoDB for future tracking and insights.
 
 ---
 
@@ -32,6 +32,23 @@ JobZone allows users to input their skills and preferred location, or upload a r
   * AWS DynamoDB
   * IAM Role for Lambda access
   * CORS enabled correctly
+
+---
+
+## 📧 Email Notification Feature
+
+A new feature allows users to receive job results directly in their email.
+
+### ✨ How it works:
+
+* A **"Send Email" button** appears after jobs are matched and displayed.
+* When the button is clicked:
+  * The frontend sends a POST request to an **email-specific Lambda function URL** (through API Gateway).
+  * The Lambda function:
+    * Receives the user's name, email, and matched job data.
+    * Formats the data into a readable email format (HTML/text).
+    * Sends the email using **AWS SES (Simple Email Service)** or another email utility (e.g., `smtplib` or `boto3`).
+* The user receives a structured list of matched jobs directly in their inbox and users can view jobs on the website or choose to receive them via email.
 
 ---
 
@@ -62,9 +79,12 @@ JobZone allows users to input their skills and preferred location, or upload a r
         v                      v
  JSearch API         DynamoDB (Jobsearches)
  (Job Listings)      (User & job match data)
-```
 
----
+         +
+         |
+         v
+Email Lambda ➝ Sends job matches to user email
+```
 
 ## 📂 Lambda Function Highlights
 
