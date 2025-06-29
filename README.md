@@ -121,18 +121,6 @@ Email Lambda ➝ Sends job matches to user email
 ## 📁 Additional Docs To Add
 
 *All markdown files are available in /docs/:
-
-lambda-setup.md – How Lambda was configured
-
-architecture.md – Visual + textual overview
-
-api-gateway-config.md – How routing & stages were set
-
-dynamodb-structure.md – Table schema and examples
-=======
-📄 Additional Documentation
-All markdown files are located in /docs/ folder and help onboard contributors quickly:
-
 [lambda-setup.md](lambda-setup.md)– How AWS Lambda was configured (runtime, env vars, IAM permissions)
 
 [architecture.md](architecture.md)– System architecture diagram + overview
@@ -140,4 +128,3 @@ All markdown files are located in /docs/ folder and help onboard contributors qu
 [api-gateway-config.md](api-gateway-config.md)– Route setup, integration, and CORS settings in API Gateway
 
 [dynamodb-structure.md](dynamodb-structure.md)– Table name, primary keys, and example data structure
->>>>>>> e315280097f3d0741fa53b1b88cb2fc939be4236
