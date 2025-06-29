@@ -102,9 +102,8 @@ Email Lambda ➝ Sends job matches to user email
 * 🔒 Secure with environment variables and CORS
 
 ---
-## 📸 Screenshots
-> * Landing form
- ### 🌕 Light Mode
+## 📸 Result Images
+> * ### 🌕 Light Mode
 ![LightMode](./screenshots/Light-mode.png)
 > * ### ✅ Job Results
 ![Job Results](./screenshots/Result.png)
