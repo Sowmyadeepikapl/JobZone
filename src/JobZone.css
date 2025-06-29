@@ -137,9 +137,38 @@ button:hover {
   font-family: 'Truculenta', sans-serif;
 }
 
+/* Email Button */
+.send-email-btn {
+  background-color: #4b3d60;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 30px;
+  font-family: 'Truculenta', sans-serif;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.send-email-btn:hover {
+  background-color: #3a2f4d;
+}
+
 /* Reset */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Truculenta', sans-serif;
+}
+
+/* === Success / Error Messages === */
+.success-msg {
+  color: green;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.error-msg {
+  color: crimson;
+  margin-top: 1rem;
+  font-weight: bold;
 }

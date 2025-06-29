@@ -82,24 +82,6 @@ JobZone allows users to input their skills and preferred location, or upload a r
 * 🔒 Secure with environment variables and CORS
 
 ---
-
-## 🛠️ Setup & Run Locally
-
-```bash
-git clone https://github.com/yourusername/JobZone.git
-cd JobZone
-npm install
-npm start
-```
-
-Set up your environment variables in AWS Lambda:
-
-```env
-JSEARCH_API_KEY=<your_rapidapi_key>
-```
-
----
-
 ## 📸 Screenshots
 
 > ✅ Add screenshots of:
@@ -118,20 +100,6 @@ JSEARCH_API_KEY=<your_rapidapi_key>
 * ReactJS & Vite
 
 ---
-
-## 📄 License
-
-MIT License. Open to use & contributions.
-
----
-
-## 👥 Team Members
-
-* 🧠 Sowmya (Frontend, AWS Setup)
-
-
----
-
 ## 📁 Additional Docs To Add
 
 *All markdown files are available in /docs/:
