@@ -97,7 +97,6 @@ Email Lambda ➝ Sends job matches to user email
 
 * 🎯 Instant job matching via API
 * 🌙 Dark/Light mode toggle (with neon glow)
-* 🧠 Resume parsing (coming soon)
 * ☁️ AWS-native integration with serverless infra
 * 🔒 Secure with environment variables and CORS
 
@@ -116,7 +115,6 @@ Email Lambda ➝ Sends job matches to user email
 * [RapidAPI JSearch](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch/)
 * [AWS Free Tier](https://aws.amazon.com/free/)
 ---
-<<<<<<< HEAD
 ## 📁 Additional Docs To Add
 
 *All markdown files are available in /docs/:
