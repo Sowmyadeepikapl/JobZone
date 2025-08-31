@@ -118,6 +118,7 @@ Email Lambda ➝ Sends job matches to user email
 ## 📁 Additional Docs To Add
 
 *All markdown files are available in /docs/:
+
 [lambda-setup.md](lambda-setup.md)– How AWS Lambda was configured (runtime, env vars, IAM permissions)
 
 [architecture.md](architecture.md)– System architecture diagram + overview
